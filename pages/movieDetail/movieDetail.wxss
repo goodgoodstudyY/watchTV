@@ -1,0 +1,4 @@
+/* pages/movieDetail.wxss */
+.vedio-wrap {
+  width: 100vw;
+}

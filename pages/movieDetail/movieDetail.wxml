@@ -1,0 +1,4 @@
+<!--pages/movieDetail.wxml-->
+<view>
+  <video src="{{ movieDetail.data[setId].url }}" autoplay="{{ true }}" class="vedio-wrap"></video>
+</view>

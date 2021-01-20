@@ -1,0 +1,29 @@
+<view>
+  <view class="fcc">
+    <input model:value="{{ searchContent }}" bindconfirm="handleGetNewContent" class="input-warp" />
+    <text bindtap="handleGetNewContent" class="ml20 fs26">确认</text>
+  </view>
+  <view wx:for="{{ movieList }}" wx:key="{{ index }}" class="mb20">
+    <view class="fss">
+      <image src="{{ item.cover }}" mode="widthFix" class="movie-banner"></image>
+      <view class="ml20">
+        <text class="movie-name">{{ item.name }}</text>
+        <view class="mt20 fs26">
+          {{ item.year }} · {{ item.type_name }} · {{ item.country }} · {{ item.lang }}
+        </view>
+        <view class="mt20 fs26 ellipsis4">{{ item.introduction }}</view>
+        <view class="play-button" data-id="{{ item.id }}" bindtap="goNextPage">立即播放</view>
+      </view>
+    </view>
+    <text
+      wx:for="{{ item.data }}"
+      wx:for-item="set"
+      wx:for-index="setIndex"
+      :wx:key="{{ set.name }}"
+      class="set-item"
+      data-id="{{ item.id }}"
+      data-setId="{{ setIndex }}"
+      bindtap="goNextPageAndHavePage"
+    >{{ setIndex + 1 }}</text>
+  </view>
+</view>

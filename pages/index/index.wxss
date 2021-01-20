@@ -1,0 +1,47 @@
+.movie-banner {
+  width: 250rpx;
+  vertical-align: top;
+  flex-shrink: 0;
+  margin-bottom: 20rpx;
+}
+.movie-name {
+  font-size: 26rpx;
+  color: #ff6600;
+}
+.ellipsis4{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+  overflow: hidden;
+  word-break: break-all;
+}
+.set-item {
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 5rpx;
+  margin: 0 10rpx 10rpx 0;
+  background: #F8F8FF;
+  color: #333;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.play-button {
+  height: 60rpx;
+  width: 160rpx;
+  background: #ff6600;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 5rpx;
+  margin-top: 20rpx;
+}
+.input-warp {
+  background: #eee;
+  width: 500rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  padding: 0 20rpx;
+}
